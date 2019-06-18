@@ -9,6 +9,39 @@
 <div class="container body-content">
 
     <!-- // TODO #2 - display the job fields, one per row -->
+    <!-- When you put "job?id=1", it will show the fields for that job -->
+
+    <table class="job-listing">
+
+        <tr>
+            <td>Name</td>
+            <!-- <td th:text="${job.getName()}"></td> -->
+            <!-- The below version is how we used this in Cheese MVC -->
+            <td th:text="${job.name}"></td>
+
+        </tr>
+
+        <tr>
+            <td >Employer</td>
+            <td th:text="${job.employer}"></td>
+        </tr>
+
+        <tr>
+            <td>Location</td>
+            <td th:text="${job.location}"></td>
+        </tr>
+
+        <tr>
+            <td>Position Type</td>
+            <td th:text="${job.positionType}"></td>
+        </tr>
+
+        <tr>
+            <td>Skill</td>
+            <td th:text="${job.coreCompetency}"></td>
+        </tr>
+
+    </table>
 
 </div>
 
